@@ -10,6 +10,8 @@ int SocketInit(void **handle);
 int SocketSend(void **handle, unsigned char *buf, int bufLen);
 //socket Recv
 int SocketRecv(void **handle, unsigned char *buf, int *bufLen);
+int SocketRecv(void **handle, unsigned char *buf, int *bufLen);
+int SocketFree(void **handle);
 //socket resete
 int SocketResete(void *handle);
 
