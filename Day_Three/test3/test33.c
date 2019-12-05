@@ -144,6 +144,28 @@ int FreeGetMemory(char **str,int *len){
     return 0;
 }
 
+int FreeGetMemory1(char ***tmp,int *len){
+    int i = 0;
+    int line = *len;
+    char **str = *tmp;
+    if (tmp == NULL){
+        printf("(tmp == NULL) Error key: -1\n");
+        return -1;
+    }
+
+    for (i = 0;i < line;i++){
+        if (*(str+i) == NULL){
+            return -1;
+        }
+        free(*(str+i));
+        *(str+i) == NULL;
+    }
+    free(str);
+    *tmp = NULL;
+    return 0;
+}
+
+
 int main(){
     char **p = NULL;
     int line = 5;
@@ -176,11 +198,10 @@ int main(){
     }
     
     // Free memory
-    ErroMsg = FreeGetMemory(p,&line);
+    ErroMsg = FreeGetMemory1(&p,&line);
     if (ErroMsg != 0){
         printf("Func ErroMsg = FreeGetMemory(p,&line) ErroMsg key:%d\n",ErroMsg);
     }
-    p = NULL;
 
     printf("Hello world\n");
     return 0;
