@@ -17,6 +17,7 @@ int SpitStr(const char *str,char *Ctmp,char buf[10][30],int *nCount){
         strtmp = strstr(SpStr,tmp);
         tmpCount = strtmp - SpStr;
         strncpy(buf[i],SpStr,tmpCount);
+        buf[i][tmpCount] = '\0';
         strtmp = strtmp+strlen(tmp);
         SpStr = strtmp;
     }
@@ -57,6 +58,7 @@ int SpitStr1(const char *str,char *Ctmp,char ***buf,int *nCount){
             return -2;
         }
         strncpy(BufTmp,SpStr,tmpCount);
+        *(BufTmp+tmpCount) = '\0';
         *(BufLineTmp + i) = BufTmp;
         strtmp = strtmp+strlen(tmp);
         SpStr = strtmp;
