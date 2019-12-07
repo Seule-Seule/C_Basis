@@ -46,7 +46,7 @@ int SpitStr1(const char *str,char *Ctmp,char ***buf,int *nCount){
         SpStr = SpStr + strlen(tmp);
     }
     SpStr = str;
-    bufLine = (char **)malloc(sizeof(char) * (bufCount+1));
+    bufLine = (char **)malloc(sizeof(char *) * (bufCount+1));
     BufLineTmp = bufLine;
     for (i = 0;i < bufCount;i++){
         strtmp = strstr(SpStr,tmp);
@@ -80,12 +80,13 @@ int main(){
     //ErroMsg = SpitStr(p,SpitC,buf,&count);
     ErroMsg = SpitStr1(p,SpitC,&buf1,&count);
     if (ErroMsg != 0){
-        printf("Func SpitStr() ErroMsg key:%d\n");
+        printf("Func SpitStr() ErroMsg key:%d\n",ErroMsg);
     }
     
     for (i = 0;i < count;i++){
         printf("%s\n",buf1[i]);
     }
+
 
     printf("Hello world\n");
     return 0;
