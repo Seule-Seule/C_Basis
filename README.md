@@ -1,11 +1,9 @@
-# C++ Study 
+# C language Study 
 
 ***
-[![readme compliant](https://img.shields.io/badge/readme%20style-c++-brightgreen.svg?style=flat-square)](https://github.com/Seule-Seule/C_Basis)
 
-* I want study C++ language with this repository! 
-* I want work with it!
-* Now, I have basis of c language and I want study start c  and the and of c++, maybe never end !! 
+* I want study C language with this repository! 
+* I want work with it! 
 
 ## Table of Contents ## 
 - [Background](#Background)
@@ -20,14 +18,15 @@
 
 ## Background
 When I is college juniors I have good live, but most of time I think I with be failure that I not have skills for work!
-I love Programming ! I want work with it!So, I study c language and c++ language.
+I love Programming ! I want work with it!So, I study c language.
 Best wishes to me!
 
 ## Install
 I finish this repository wite Ubuntu 18.04,vim,GUN and make. All of them you can build. 
 ```sh
-sudo apt-get install vim gcc g++ make
+sudo apt-get install vim gcc make
 ```
+> If haven't Makefile in directory, you can build it with everyone IDE. 
 
 ## Usage
 Like most, you can built it with common methods.
@@ -38,12 +37,7 @@ make run
 make clean
 ······
 ```
-
-## Badge
-[![readme compliant](https://img.shields.io/badge/college%20style-c++-brightgreen.svg?style=flat-square)](https://github.com/Seule-Seule/C_Basis)
-
-## Example-readmes
-NULL
+> Or you can use `RUN` in IDE.
 
 ## Related-efforts
 - [Art of Readme](https://github.com/Seule-Seule/Readme) - 💌 About write my README.
