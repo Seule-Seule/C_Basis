@@ -9,7 +9,6 @@
 - [Background](#Background)
 - [Install](#Install)
 - [Usage](#Usage)
-- [Badge](#Badge)
 - [Example Readmes](#Example-readmes)
 - [Related Efforts](#Related-efforts)
 - [Maintainers](#Maintainers)
